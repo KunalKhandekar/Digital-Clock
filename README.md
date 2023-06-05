@@ -8,7 +8,8 @@ This project is a web-based digital clock that displays the current time in hour
 
 ## Preview
 
-![Digital Clock Preview](clock-preview.png)
+<img width="759" alt="Screenshot 2023-06-05 094235" src="https://github.com/KunalKhandekar/Digital-Clock/assets/134169718/e783d1a4-0388-4560-ac45-a866a8591384">
+
 
 ## Features
 
