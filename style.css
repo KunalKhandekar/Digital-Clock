@@ -188,11 +188,15 @@ body {
     }
 
     .h {
-        left: 14%;
+        left: 15%;
     }
 
     .m {
-        left: 36%;
+        left: 37%;
+    }
+
+    .s {
+        right: 25%;
     }
 
     .hours, .minutes, .seconds {
