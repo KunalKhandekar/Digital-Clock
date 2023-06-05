@@ -128,6 +128,7 @@ body {
 @media screen and (max-width: 475px) {
     .clock-container {
         min-width: 370px;
+        padding-inline: 30px;
     }
 
     .clock-container h1 {
@@ -170,5 +171,40 @@ body {
 
     .h {
         left: 16%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .clock-container {
+        min-width: 300px;
+    }
+
+    .clock-container h1 {
+        font-size: 40px;
+    }
+
+    .h, .m, .s {
+        font-size: 12px;
+    }
+
+    .h {
+        left: 14%;
+    }
+
+    .m {
+        left: 36%;
+    }
+
+    .hours, .minutes, .seconds {
+        font-size: 30px;
+        margin-inline: 8px;
+    }
+
+    .day_night {
+        bottom: 17%;
+        right: 8%;
+        font-size: 14px;
+        padding: 3px 0px;
+        width: 39px;
     }
 }
