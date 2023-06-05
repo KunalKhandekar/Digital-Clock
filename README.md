@@ -18,3 +18,7 @@ This project is a web-based digital clock that displays the current time in hour
 - Supports 12-hour time format with AM/PM indicator.
 - Stylish design with a dark background and shining effect.
 - Responsive design for different screen sizes.
+
+## Try it
+
+Go to - https://digital-clock-by-kunal.netlify.app/
