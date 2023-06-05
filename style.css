@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Allerta&family=Montserrat&family=Poppins:wght@100;200;300;400&family=Roboto:wght@300&family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #E6E4E4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-container {
+    min-width: 450px;
+    background-color: #000;
+    border-radius: 30px;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.clock-container h1 {
+    font-size: 60px;
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clock-container h2 {
+    padding-top: 15px;
+    color: rgb(253, 214, 2);
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clock {
+    display: flex;
+    justify-content: center;
+    margin-block: 10px;
+    margin-top: 30px;
+    padding-right: 44px;
+}
+
+.h,
+.m,
+.s {
+    position: absolute;
+    font-size: 17px;
+    font-family: 'Allerta', sans-serif;
+}
+
+.h {
+    left: 17%;
+}
+
+.m {
+    left: 38%;
+}
+
+.s {
+    right: 24%;
+}
+
+.hours,
+.minutes,
+.seconds {
+    border-radius: 7px;
+    border: 2px solid white;
+    padding: 10px;
+    margin-inline: 14px;
+    font-size: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.day_night {
+    font-size: 16px;
+    border-radius: 7px;
+    border: 2px solid white;
+    padding-block: 5px;
+    width: 50px;
+    position: absolute;
+    bottom: 20%;
+    right: 10%;
+    transform: rotate(90deg);
+}
+
+
+@keyframes shine {
+    0% {
+        left: -100px
+    }
+
+    20% {
+        left: 100%
+    }
+
+    100% {
+        left: 100%
+    }
+}
+
+.hours p::before,
+.minutes p::before,
+.seconds p::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 30%,
+            rgba(255, 255, 255, .8),
+            rgba(255, 255, 255, 0) 70%);
+    top: 0;
+    left: -100px;
+    animation: shine 3s infinite linear;
+    /* Animation */
+}
+
+
+@media screen and (max-width: 475px) {
+    .clock-container {
+        min-width: 370px;
+    }
+
+    .clock-container h1 {
+        font-size: 50px;
+    }
+
+    .clock-container h2 {
+        font-size: 20px;
+    }
+
+    .clock {
+        padding-right: 37px;
+    }
+
+    .h,
+    .m,
+    .s {
+        font-size: 14px;
+    }
+
+    .hours,
+    .minutes,
+    .seconds {
+        font-size: 40px;
+        margin-inline: 10px;
+    }
+
+    .day_night {
+        bottom: 18%;
+        right: 8%;
+    }
+
+    .s {
+        right: 24%;
+    }
+
+    .m {
+        left: 37%;
+    }
+
+    .h {
+        left: 16%;
+    }
+}
