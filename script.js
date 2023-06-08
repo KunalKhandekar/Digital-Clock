@@ -4,9 +4,7 @@ setInterval(() => {
     let m = date.getMinutes();
     let s = date.getSeconds();
 
-     if (h > 12) {
-        day_night.textContent = "PM" 
-    }
+     
    
     if (h < 10) {
         h = "0" + h;
