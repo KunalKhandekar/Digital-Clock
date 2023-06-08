@@ -1,12 +1,10 @@
 setInterval(() => {
     let date = new Date();
-    let h = date.getHours();
+    let h = date.getHours() % 12;
     let m = date.getMinutes();
     let s = date.getSeconds();
 
      if (h > 12) {
-        h = h - 12;
-        h = "0" + h;
         day_night.textContent = "PM" 
     }
    
